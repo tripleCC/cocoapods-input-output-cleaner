@@ -17,28 +17,28 @@ module Pod
     # @todo Create a PR to add your plugin to CocoaPods/cocoapods.org
     #       in the `plugins.json` file, once your plugin is released.
     #
-    class Cleaner < Command
-      self.summary = 'Short description of cocoapods-input-output-cleaner.'
+    # class Cleaner < Command
+      # self.summary = 'Short description of cocoapods-input-output-cleaner.'
 
-      self.description = <<-DESC
-        Longer description of cocoapods-input-output-cleaner.
-      DESC
+      # self.description = <<-DESC
+      #   Longer description of cocoapods-input-output-cleaner.
+      # DESC
 
-      self.arguments = 'NAME'
+      # self.arguments = 'NAME'
 
-      def initialize(argv)
-        @name = argv.shift_argument
-        super
-      end
+      # def initialize(argv)
+      #   @name = argv.shift_argument
+      #   super
+      # end
 
-      def validate!
-        super
-        help! 'A Pod name is required.' unless @name
-      end
+      # def validate!
+      #   super
+      #   help! 'A Pod name is required.' unless @name
+      # end
 
-      def run
-        UI.puts "Add your implementation for the cocoapods-input-output-cleaner plugin in #{__FILE__}"
-      end
-    end
+      # def run
+      #   UI.puts "Add your implementation for the cocoapods-input-output-cleaner plugin in #{__FILE__}"
+      # end
+    # end
   end
 end
